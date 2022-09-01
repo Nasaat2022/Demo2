@@ -1,0 +1,52 @@
+.main_Section_vehicle {
+  position: relative;
+  background-color: #ffff;
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.background_vehicle {
+  position: absolute;
+  width: 50%;
+  min-height: inherit;
+  top: -15%;
+  left: 25%;
+}
+.background_vehicle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 20%;
+}
+.Container_data_Vehicle h3 {
+  font: 700 45px "Poppins";
+  z-index: 999;
+}
+.Container_data_Vehicle p {
+  font: 400 20px "Poppins";
+  z-index: 9999;
+}
+.Container_data_Vehicle a {
+  padding: 15px 100px;
+  margin-bottom: 50px;
+  border-radius: 0 30px 0 30px;
+  cursor: pointer;
+  background-color: #00163c;
+  text-decoration: none;
+  color: #ffff;
+  margin-top: 10px;
+}
+.Container_data_Vehicle {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 60px;
+  margin-left: 60px;
+  z-index: 9999;
+}

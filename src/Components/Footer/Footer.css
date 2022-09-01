@@ -1,0 +1,72 @@
+.main_footer {
+  background-color: #00163c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.main_footer_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  row-gap: 2vmax;
+}
+.footer_logo {
+  width: 2vmax;
+  height: 2vmax;
+}
+.footer_logo img {
+  width: 100%;
+  height: 100%;
+}
+.main_footer_left nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2vmax;
+}
+.main_footer .nav_items ul li {
+  list-style: none;
+}
+.main_footer .nav_items ul li a {
+  text-decoration: none;
+  color: #fff;
+  font: 400 13px "Poppins";
+}
+.main_footer_left .footer_brand_para p {
+  font: 200 13px "Poppins";
+}
+.main_footer_right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_footer_right nav ul li {
+  margin-top: 10px;
+}
+.main_footer_right .nav_icons {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1vmax;
+  font-size: 1vmax;
+  margin-right: 80px;
+}
+.main_footer .fullRight_Brand_name h1 {
+  position: absolute;
+  font: 800 185px "Poppins";
+  top: 89rem;
+  right: -95%;
+  z-index: 22;
+  color: rgba(255, 255, 255, 0.1);
+  align-self: flex-start;
+  letter-spacing: 5px;
+}

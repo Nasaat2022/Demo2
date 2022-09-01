@@ -1,0 +1,122 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  padding: 100px 0;
+}
+.container .Box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 40px;
+  background: #00163c;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.container .Box::before {
+  content: "Sx500";
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  font: 800 6rem "Poppins";
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .Box:hover::before {
+  opacity: 0.5;
+}
+.container .Box .name {
+  position: absolute;
+  top: 30px;
+  left: 0%;
+  text-align: center;
+  font: 500 2vmax "Poppins";
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 100px);
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 10;
+}
+.container .Box:hover .name {
+  opacity: 1;
+  top: 40px;
+  font-size: 2.5vmax;
+  font-weight: 700;
+}
+.container .Box .buy {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50px, 0, 75px);
+  color: #000;
+  background: #bdbdbd36;
+  padding: 8px 40px;
+  font: 400 0.8vmax "Poppins";
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+.container .Box:hover .buy {
+  bottom: 10%;
+  opacity: 1;
+}
+.container .Box .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #fff;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 50px);
+}
+.container .Box:hover .circle {
+  opacity: 1;
+}
+.container .Box .product {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  max-width: 550px;
+  transition: 0.5s;
+  z-index: 12;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px);
+}
+.container .Box:hover .product {
+  transform: translate3d(-50%, -50%, 100px);
+}
+.container .Box:nth-child(1) .circle,
+.container .Box:nth-child(1) .buy {
+  background-color: rgba(204, 32, 39, 1);
+}
+.container .Box:nth-child(2) .circle,
+.container .Box:nth-child(2) .buy {
+  background-color: #005baa;
+}
+.container .Box:nth-child(3) .circle,
+.container .Box:nth-child(3) .buy {
+  background-color: #d6d5d4;
+}
+.container .Box:nth-child(4) .circle,
+.container .Box:nth-child(4) .buy {
+  background-color: #f1af1b;
+}
